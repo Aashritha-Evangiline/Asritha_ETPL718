@@ -1,0 +1,87 @@
+Map:- 
+=> Accepts value in key value pair
+=> Does not accept key of diff types
+
+
+HASHMap:-
+----------
+1.will accept any type of key and any type of values(can also use generics to specify)
+2.Doesn't accept duplicate key if given it will take but stores latest value only
+3.Will accept duplicate values
+4.***Will accept null key(not duplicate) and null value(duplicate)***
+5.Order of insertion is not preserved
+6.Generics can be of anytype <String,Integer>
+7.//Different way using for each loop put.ketSet() after object
+	1.	for(Object i : mymap.keySet()) {
+			System.out.println(i);             -----> Keys are displayed
+		}
+		
+	2. for(Object i : mymap.values()) {
+			System.out.println(i);             -----> only values are displayed
+		}	
+	
+
+  METHODS:-
+  ___________
+   1. put(key,value)
+   2.containsValue(value)---> returns true or false
+   3.containsKey(key)---> returns true or false
+   4. replace(oldkey,newValue)
+   5.replace(oldkey,oldValue,newValue)
+   6.remove(key)---> returns value
+   7.remove(key,value)---> returns true/false
+   
+HASHTable:-
+----------
+1.will accept any type of key and any type of values(can also use generics to specify)
+2.Doesn't accept duplicate key if given it will take but stores latest value only
+3.Will accept duplicate values
+4.***Will not accept null key and null value***
+5.Order of insertion is not preserved
+6.Generics can be of anytype <String,Integer>
+7.//Different way using for each loop object.ketSet() and object.values after object
+
+	1.	for(Object i : mymap.keySet()) {
+			System.out.println(i);             -----> Keys are displayed
+		}
+		
+	2. for(Object i : mymap.values()) {
+			System.out.println(i);             -----> only values are displayed
+		}	
+
+  METHODS:-
+  ___________
+   1.put(key,value)
+   2.containsValue(value)---> returns true or false
+   3.containsKey(key)---> returns true or false
+   4.replace(oldkey,newValue)
+   5.replace(oldkey,oldValue,newValue)
+   6.remove(key)---> returns value
+   7.remove(key,value)---> returns true/false
+   
+ TREEMap:-
+ -----------
+ 1. In TreeMap key has to be of same datatype and value can be any type
+ 2. If we want to specity data to store we can by Generics
+ 3. Data is stored in sorted order by key
+ 4. ***null key is not accepted but null value is accepted(duplicate null val also)***
+ 5. Can print by object.ketSet() and object.values and also key and value together
+ 
+     1.	for(Object i : mymap.keySet()) {
+			System.out.println(i);             -----> Keys are displayed
+		}
+		
+	 2. for(Object i : mymap.values()) {
+			System.out.println(i);             -----> only values are displayed
+		}
+		
+	 3. for(Map.Entry<Integer,String> entry:studentRecords.entrySet()) {
+	        System.out.println("ID : "+entry.getKey()+" Name : "+entry.getValue());
+	    }	
+ 
+   
+   
+   
+   
+   
+  
